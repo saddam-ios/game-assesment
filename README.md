@@ -23,7 +23,7 @@ This assingment follows a very simple project structure:
     - `action-type`: Folder to enum of All type of actions.
     - `actions`: This folder contains all actions that can be dispatched to redux.
     - `reducers`: This folder should have all your reducers, and expose the combined result using its `index.ts`
- - `screens`: Folder that contains all your application screens/features.
+  - `screens`: Folder that contains all your application screens/features.
     - `Screen`: Each screen should be stored inside its folder and inside it a file for its code and a separate one for the styles and tests.
       - `index.tsx`
       - `styles.ts`
