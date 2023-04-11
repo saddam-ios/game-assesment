@@ -26,7 +26,7 @@ This assingment follows a very simple project structure:
  - `screens`: Folder that contains all your application screens/features.
     - `Screen`: Each screen should be stored inside its folder and inside it a file for its code and a separate one for the styles and tests.
       - `index.tsx`
-      - `styles.js`
+      - `styles.ts`
 
 - `App.tsx`: Main component that starts your whole app.
 - `index.js`: Entry point of your application as per React-Native standards.
