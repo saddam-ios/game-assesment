@@ -1,6 +1,6 @@
 # Game Assement
 
-This App aims to be a foundation for react-native applications. It provides a  organized structure & also demonstrate the use of Native Bridging.
+This App aims to be a game assesment for react-native applications using Native Bridging. It provides a organized structure & also demonstrate the use of Native Bridging.
 
 ## Usage
 
