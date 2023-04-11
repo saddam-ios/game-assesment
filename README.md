@@ -1,6 +1,6 @@
 # Game Assement
 
-This App aims to be a game assesment for react-native applications using Native Bridging. It provides a organized structure & also demonstrate the use of Native Bridging.
+This App aims to be a game assignment for react-native applications using Native Bridging. It provides a organized structure & also demonstrate the use of Native Bridging.
 
 ## Preview
 ![](https://github.com/saddam-ios/game-assesment/blob/main/assets/IM_3.jpeg?raw=true)
