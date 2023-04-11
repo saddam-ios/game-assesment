@@ -1,6 +1,11 @@
 import { Game } from "../../models/games";
 import { ActionType } from "../action-types";
 
+
+/**
+ * Actions
+ */
+
 interface LoadedGames {
   type: ActionType.SET_GAMES,
   payload: Game[]

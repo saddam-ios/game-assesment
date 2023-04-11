@@ -5,6 +5,11 @@ import { GamesDispatchType } from '../actions/index'
 
 import gamesData from '../../../data.json'
 
+
+/**
+ * Action Creators
+ */
+
 export const getGames = () => {
     return (dispatch: Dispatch<GamesDispatchType>) => {
         if (gamesData) {

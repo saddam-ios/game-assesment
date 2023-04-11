@@ -1,3 +1,7 @@
+/**
+ * Action Type Enum listed here
+ */
+
 export enum ActionType {
     SET_GAMES = 'set_games',
     RESET_GAMES = 'reset_games',

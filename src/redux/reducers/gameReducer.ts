@@ -2,6 +2,10 @@ import { GameInitialState } from "../../models/games";
 import { ActionType } from "../action-types";
 import { GamesDispatchType } from '../actions/index'
 
+/**
+ * Game Reducer
+ */
+
 const initialState: GameInitialState = {
     games: [],
     isLoading: false

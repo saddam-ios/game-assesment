@@ -6,32 +6,29 @@ import { bindActionCreators } from 'redux';
 import { GameCard } from '../../components/game-card';
 import { Game } from '../../models/games';
 import { actionCreators } from '../../redux';
+import { getImageURI } from '../../Utils';
 import styles from './style';
 
+/**
+ * GameListScreen will be responsible to get the games data 
+ * & then will render the cards in a Flatlist
+ */
+
 function GameListScreen() {
+
   const dispatch = useDispatch();
-  const { getGames, resetGames } = bindActionCreators(actionCreators, dispatch)
+  const { getGames } = bindActionCreators(actionCreators, dispatch)
   const games = useSelector((store) => store.games);
+
 
   useEffect(() => {
     getGames();
   }, []);
 
-  const getImageURI = (steamUrl: string) => {
-    if (steamUrl) {
-      const appId = steamUrl.split("/").pop();
-      if (appId) {
-        return `https://steamcdn-a.akamaihd.net/steam/apps/${appId}/library_600x900_2x.jpg`
-      }
-    }
-    return "https://steamcdn-a.akamaihd.net/steam/apps/661920/library_600x900_2x.jpg"
-  }
-
-  const renderGameCard = ({ item, index }: { item: Game, index:number }) => {
+  
+  const renderGameCard = ({ item }: { item: Game }) => {
     return <GameCard id = {item.id} title={item.title} imageUri={getImageURI(item.steamUrl)} publisher={item.publisher}></GameCard>
   }
-
- 
 
   return (
     <View style={styles.containerStyle}>

@@ -1,7 +1,14 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity, NativeModules } from 'react-native'
 
+import ToastModule from '../../ToastModule';
+
 import styles from './style';
+
+/**
+ * GameCard - getting required props & displaying 
+ * the info along with the click action handling
+ */
 
 interface IGameCardProps {
     id: number,
@@ -14,6 +21,7 @@ export const GameCard: React.FC<IGameCardProps> = (props: IGameCardProps) => {
     const { title, imageUri, publisher } = props;
 
     const handleCardClick = () => {
+        ToastModule.show(title, ToastModule.LONG);
     }
 
     return (

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import {SCREEN_WIDTH} from '../../common'
+import {SCREEN_WIDTH} from '../../constants'
 
 const styles = StyleSheet.create({
     containerStyle: {
